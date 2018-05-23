@@ -1,0 +1,146 @@
+<!--主容器-->
+<view class='context'>
+  <!--头部面板-->
+  <view class="head-panel-top">
+
+    <view class='left padding-left'>
+      <label class='lable-text'>
+        省市
+        <label class='down-style icon-jiantou32 iconfont'></label>
+      </label>
+      <label class='icon-vertical_line iconfont'></label>
+    </view>
+    <view class='center'>
+      <label class='lable-text'>
+        商圈
+        <label class='down-style icon-jiantou32 iconfont'></label>
+      </label>
+      <label class='icon-vertical_line iconfont'></label>
+    </view>
+    <view class='right padding-right'>
+      <label class='lable-text'>
+        门店
+        <label class='down-style icon-jiantou32 iconfont'></label>
+      </label>
+    </view>
+  </view>
+  <!--分割线-->
+  <view class='top-line'></view>
+  <!--查询条件 组件-->
+  <view class='query-criteria'>
+    <view class='query-time'>
+      <label class='criteria criteria-left-radius'>昨日</label>
+      <label class='criteria clear-border-left'>近七日</label>
+      <label class='criteria clear-border-left'>近30日</label>
+      <label class='criteria clear-border-left select criteria-right-radius'>自定义</label>
+    </view>
+    <view class='query-stat'>
+      <label class='stat-lable stat-item'>统计时间</label>
+      <view class='time-control criteria-fillet'>
+        <label class='iconfont icon-date date-icon'></label>
+        <input class='query' value='2018-12-11' type='text'></input>
+      </view>
+      <label class='stat-lable stat-item'>到</label>
+      <view class='time-control criteria-fillet'>
+        <label class='iconfont icon-date date-icon'></label>
+        <input class='query' value='2018-12-11' type='text'></input>
+      </view>
+    </view>
+  </view>
+  <!-- 品类统计饼图 -->
+  <view class='panel-title'>
+    <label class='title-info'>
+      品类占比
+    </label>
+    <view class='icon-explain'>
+      <label class='icon-wenhao iconfont pull-left '>
+      </label>
+      <label class='pull-left'>指标解释</label>
+    </view>
+  </view>
+  <view class='pull-left box'>
+    <view class='pie'>
+      <ec-canvas class='' id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ pie }}">
+      </ec-canvas>
+    </view>
+    <view class='pull-left box-info'>
+      <view class='item pull-left'>
+        <view class='pull-left'>
+          <label class='iconfont icon-newcircular item-icon color-1 pull-left'></label>
+          <label class='pull-left item-text'>品类1</label>
+          <label class='pull-left item-text'>:</label>
+          <label class='pull-left item-text'>￥3459.75</label>
+        </view>
+        <view class='pull-left'>
+          <label class='pull-left item-info item-first tip-color'>比前某某日</label>
+          <label class='pull-left item-info iconfont icon-arrow-up like-red icon-big'></label>
+          <label class='pull-left item-info big-font like-red'>5%</label>
+        </view>
+      </view>
+      <view class='item pull-left'>
+        <view class='pull-left'>
+          <label class='iconfont icon-newcircular item-icon color-2 pull-left'></label>
+          <label class='pull-left item-text'>品类1</label>
+          <label class='pull-left item-text'>:</label>
+          <label class='pull-left item-text'>￥3459.75</label>
+        </view>
+        <view class='pull-left'>
+          <label class='pull-left item-info item-first tip-color'>比前某某日</label>
+          <label class='pull-left item-info iconfont icon-arrow-up like-red icon-big'></label>
+          <label class='pull-left item-info big-font like-red'>5%</label>
+        </view>
+      </view>
+      <view class='item pull-left marginTop'>
+        <view class='pull-left'>
+          <label class='iconfont icon-newcircular item-icon color-3 pull-left'></label>
+          <label class='pull-left item-text'>品类1</label>
+          <label class='pull-left item-text'>:</label>
+          <label class='pull-left item-text'>￥3459.75</label>
+        </view>
+        <view class='pull-left'>
+          <label class='pull-left item-info item-first tip-color'>比前某某日</label>
+          <label class='pull-left item-info iconfont icon-arrow-down like-blue icon-big'></label>
+          <label class='pull-left item-info big-font like-blue'>5%</label>
+        </view>
+      </view>
+      <view class='item pull-left marginTop'>
+        <view class='pull-left'>
+          <label class='iconfont icon-newcircular item-icon color-4 pull-left'></label>
+          <label class='pull-left item-text'>品类1</label>
+          <label class='pull-left item-text'>:</label>
+          <label class='pull-left item-text'>￥3459.75</label>
+        </view>
+        <view class='pull-left'>
+          <label class='pull-left item-info item-first tip-color'>比前某某日</label>
+          <label class='pull-left item-info iconfont icon-arrow-down like-blue icon-big'></label>
+          <label class='pull-left item-info big-font like-blue'>5%</label>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='center-line-context pull-left'>
+  </view>
+  <!-- 趋势对比图 -->
+  <view class='panel-title'>
+    <label class='title-info'>
+      趋势对比图
+    </label>
+    <view class='icon-explain'>
+      <label class='icon-wenhao iconfont pull-left '>
+      </label>
+      <label class='pull-left'>指标解释</label>
+    </view>
+  </view>
+  <view class='panel-context pull-left'>
+    <view class='query-time'>
+      <label class='criteria criteria-left-radius'>品类一</label>
+      <label class='criteria clear-border-left'>品类二</label>
+      <label class='criteria clear-border-left'>品类三</label>
+      <label class='criteria clear-border-left select criteria-right-radius'>品类四</label>
+    </view>
+  </view>
+  <view class='pull-left line-panel panel-context'>
+    <ec-canvas class='panel-context' id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ line }}">
+    </ec-canvas>
+  </view>
+</view>

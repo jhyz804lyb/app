@@ -1,0 +1,324 @@
+@import "../common/font-icon.wxss";
+
+view.context {
+  background-color: #f6f7f9;
+}
+
+.left, .center, .right {
+  width: 26.66%;
+  float: left;
+  text-align: center;
+}
+
+.head-panel-top .right {
+  width: 31%;
+}
+
+.padding-left {
+  margin-left: 10%;
+}
+
+.padding-right {
+  margin-right: 5%;
+}
+
+.head-panel-top {
+  background-color: #fff;
+}
+
+.font-info {
+  float: left;
+}
+
+.lable-text {
+  float: left;
+  color: #7f7f7f;
+  font-family: '微软雅黑';
+  font-size: 11.26pt;
+  line-height: 15pt;
+  width: 90%;
+  text-align: center;
+}
+
+.down-style {
+  color: #c2c2c4;
+  width: 15pt;
+  height: 15pt;
+  line-height: 15pt;
+}
+
+.icon-vertical_line {
+  float: right;
+  color: #d0d0d0;
+  line-height: 15pt;
+  font-size: 10pt !important;
+  font-weight: 200;
+  width: 10%;
+}
+
+.top-line {
+  float: left;
+  margin-top: 2pt;
+  border-bottom: 1px solid #d0d0d0;
+  width: 100%;
+}
+
+/**查询条件**/
+
+.query-criteria {
+  width: 100%;
+  float: left;
+  background-color: #f5f7f9;
+  padding-bottom: 10rpx;
+}
+
+.query-time {
+  padding-top: 20rpx;
+  padding-left: 4%;
+}
+
+.query-time label {
+  text-align: center;
+  height: 60rpx;
+  float: left;
+  font-size: 30rpx;
+  font-family: '微软雅黑';
+  line-height: 60rpx;
+  border: 1px solid #d0d0d0;
+  width: 23%;
+  color: #7f7f7f;
+  background-color: #fff;
+}
+
+.query-time label.select {
+  border: 2px solid #065091;
+  margin-top: -1px;
+}
+
+.clear-border-left {
+  border-left: none !important;
+}
+
+.query-time label.select {
+  background-color: #065091;
+  color: #fff;
+}
+
+.criteria-fillet {
+  border-radius: 3px;
+}
+
+.criteria-left-radius {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.criteria-right-radius {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.query-time {
+  float: left;
+  width: 100%;
+}
+
+.query-stat {
+  padding-left: 5%;
+}
+
+.query-stat .stat-lable {
+  color: #7f7f7f;
+  font-family: '微软雅黑';
+  font-size: 18rpx;
+  line-height: 50rpx;
+}
+
+.stat-item {
+  float: left;
+  margin-top: 10rpx;
+}
+
+input.query {
+  width: 150rpx;
+  font-family: '微软雅黑';
+  font-size: 24rpx;
+  color: #7f7f7f;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  padding: 0 15rpx;
+  height: 50rpx;
+}
+
+.time-control {
+  margin-left: 16rpx;
+  float: left;
+  border: 1px solid #d0d0d0;
+  margin-top: 10rpx;
+  margin-right: 16rpx;
+  background-color: #fff;
+}
+
+.date-icon {
+  float: left;
+  font-size: 24rpx !important;
+  margin-left: 10rpx;
+  height: 50rpx !important;
+  text-overflow: clip;
+  line-height: 50rpx;
+}
+
+/*小模块头部*/
+
+.panel-title {
+  float: left;
+  height: 76rpx !important;
+  border-top: 1rpx solid #d0d0d0;
+  border-bottom: 1rpx solid #d0d0d0;
+  width: 100%;
+  padding: 0 24rpx;
+}
+
+.panel-title label.title-info {
+  font-size: 34rpx;
+  color: #000;
+  font-weight: 700;
+  line-height: 76rpx;
+  height: 76rpx;
+}
+
+.icon-explain {
+  float: right;
+  margin-right: 20pt;
+}
+
+.icon-explain label {
+  font-size: 28rpx !important;
+  line-height: 76rpx;
+  color: #c7c7c7;
+}
+
+.icon-explain label.icon-wenhao {
+  margin-right: 2pt;
+  font-size: 12pt !important;
+}
+
+.pull-left {
+  float: left;
+}
+
+/*  饼图 */
+
+view.pie {
+  float: left;
+  width: 30%;
+  margin-left: 6%;
+  height: 230rpx;
+}
+
+view.box {
+  margin-top: 1pt;
+  float: left;
+  width: 100%;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #d0d0d0;
+}
+
+view.box-info {
+  margin-top: 50rpx;
+  height: 100%;
+  width: 64%;
+}
+
+label.item-icon {
+  font-size: 30rpx !important;
+}
+
+.item-text {
+  font-size: 20rpx;
+  font-family: "微软雅黑";
+  font-weight: 600;
+}
+
+.item-first {
+  margin-left: 30rpx;
+}
+
+.item-info {
+  font-size: 18rpx;
+  font-family: "微软雅黑";
+}
+
+.like-red {
+  color: #a00006;
+}
+
+.like-blue {
+  color: #abffaa;
+}
+
+.tip-color {
+  COLOR: #7f7f7f;
+}
+
+.icon-big {
+  font-size: 24rpx;
+}
+
+.marginTop {
+  margin-top: 40rpx;
+}
+
+.marginTop30 {
+  margin-top: 30rpx;
+}
+
+.big-font {
+  font-size: 24rpx;
+  font-family: "微软雅黑";
+  font-weight: 600;
+  line-height: 24rpx;
+}
+
+.item {
+  width: 50%;
+}
+
+.panel-context {
+  width: 100%;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.center-line-context {
+  width: 100%;
+  height: 30rpx;
+  background-color: #f6f7f9;
+}
+
+.line-panel {
+  height: 300rpx;
+}
+
+/*饼图颜色 ["#4C4C4C", "#999999", "#CCCCCC", "#07509D"] */
+
+.color-1 {
+  color: #4c4c4c;
+}
+
+.color-2 {
+  color: #07509d;
+}
+
+.color-3 {
+  color: #999;
+}
+
+.color-4 {
+  color: #ccc;
+}
+
+/*图标  */
